@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question7</title>
+</head>
+<body>
+<label for="User Name">User Name</label>
+<input type="text" id="User Name" value="ATIKU"><br><br>
+<label for="Password">Password</label>
+<input type="Password" id="Password" ><br><br>
+<label for="Domain">Domain</label>
+<select>
+   <option>Academic Staff</option>
+</select>
+<br><br>
+<input type="Submit" name="Login" value="Login">
+<input type="reset" name="Clear" value="Clear">
+</body>
+</html>
