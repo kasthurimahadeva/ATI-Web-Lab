@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Q10 </title>
+</head>
+<body>
+	<style>
+		.bordered {
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border: 1px solid yellowgreen;
+       }
+    </style>
+	<div class="bordered">
+    <Form>
+        <label> Name: </label>
+        <input type="text" id="name" value="D.Jayasinghe">
+		<br>
+        <label> Password: </label>
+        <input type="password" id="password" value="*******">
+		<br>
+		<label> Address: </label>
+        <textarea id="textbox" name="textbox" rowspan="5" colspan="20"> 34, Galle Rd. </textarea>
+		<br>
+        <p> Gender:
+            <input type="radio" id="male"  name="sex" value="male" checked>
+            <label> Male </label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label> Female </label>
+		<br>
+        </p>
+        <label> Country: </label>
+		<br>
+            <select id="country" name="country">
+				<option value="ind"> India </option>
+				<option value="sl" selected> Srilanka </option> 
+				<option value="np"> Nepal </option>
+			</select>
+		<br>
+             <input type="checkbox" id="Checkbox1" name="agree" value="agree" checked>
+            <label> I agree with terms and conditions </label>
+        <p>
+             <input type="submit" value="submit">
+             <input type="reset">
+        </p>        
+    </Form>
+    </div>
+ </body> 
+</html>
