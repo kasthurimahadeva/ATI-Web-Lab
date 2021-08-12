@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+<form>
+    <h1>Personal Data Collection Sheet</h1>
+
+    <p>Send your personal data using following form</p>
+
+    <div>
+        <label for="name">
+            Name:
+            <input type="text" id="name">
+        </label>
+    </div>
+    <br>
+
+    <div>
+        <label for="comment">
+            Comments:
+            <textarea id="comment" rows="6" cols="20">Write your comment here.</textarea>
+        </label>
+    </div>
+    <br>
+
+    <div>
+        <label for="nic">
+            NIC:
+            <input type="text" id="nic">
+        </label>
+    </div>
+    <br>
+
+    <div>
+        Area of Interests: <br>
+        <label for="math">Maths</label>
+        <input type="checkbox" id="math" name="maths">
+
+        <label for="bio">Biology</label>
+        <input type="checkbox" id="bio" name="biology">
+
+        <label for="chem">Chemistry</label>
+        <input type="checkbox" id="chem" name="chemistry">
+
+        <label for="phy">Physics</label>
+        <input type="checkbox" id="phy" name="physics">
+
+        <label for="cs">Computer Science</label>
+        <input type="checkbox" id="cs" name="computerscience">
+       
+    </div>
+    <br>
+    
+        Sex:
+    <div>
+        <label for="male">
+            Male  
+            <input type="radio" id="male" name="gender" checked>
+        </label>
+        <label for="female">
+            Female  
+            <input type="radio" id="female" name="gender">
+        </label>
+    </div>
+    <br>
+
+    <div>
+        <label for="lvl">
+            Level: <br>
+            <select name="level" id="lvl">
+                <option>Admitted</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+            </select>
+        </label>
+    </div>
+    <br>
+
+    <span>
+        <input type="submit" value="Submit">
+    </span>
+    <span>
+        <input type="reset" value="Reset">
+    </span>
+</form>
+</body>
+</html>
