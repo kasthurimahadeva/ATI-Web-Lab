@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SubmitForm</title>
+    <style>
+        form {
+            margin-right: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset style="border-color: rgb(16, 236, 27);">
+        <div>
+            <label for="name">
+                Name:
+                <input type="text" id="name" value="D. Jayasinghe" style="background-color:  #ffff66;"> 
+            </label>
+        </div>
+        
+        <div>
+            <label for="pwd">
+                Password:
+                <input type="password" id="pwd" value="DJSL123">
+            </label>
+        </div>
+        
+        <div>
+            <label for="adres">
+                Address: <br>
+                <textarea id="adres" rows="3" cols="20">34, Galle Rd.</textarea>
+            </label>
+        </div>
+        
+        <div>
+            Gender:
+            <label for="male">
+                <input type="radio" id="male" name="gender" checked>
+                Male  
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender">
+                Female    
+            </label>
+        </div>
+        
+        <div>
+            <label for="cnty">
+                Country: <br>
+                <select name="country" id="cnty" size="3">
+                    <option>India</option>
+                    <option selected>Sri Lanka</option>
+                    <option>Nepal</option>
+                    <option>Bangaladesh</option>
+                    <option>Pakistan</option>
+                </select>
+            </label>
+        </div>
+        
+        <label>
+            <input type="checkbox" name="chkbx" value="tandc" checked>
+            I agree with terms and conditions.
+        </label>
+        <br>
+        <span>
+            <input type="submit" value="Submit">
+        </span>
+        
+        <span>
+            <input type="reset" value="Reset">
+        </span>
+        </fieldset>
+    </form>
+</body>
+</html>
