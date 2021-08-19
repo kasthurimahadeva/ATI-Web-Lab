@@ -74,9 +74,11 @@ div.content{
             background: #1837c2;
             color: #fff;
             box-shadow:0px 0px 10px rgb(104, 55, 241); /* extra added */
+            padding: 20px;
+            margin:5px;
         }
 
-        
+
 
         
         
