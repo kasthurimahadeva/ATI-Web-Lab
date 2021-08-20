@@ -12,3 +12,33 @@ div.main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+ul li{
+    list-style:none;
+    display: inline;
+    margin-left:20px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.logo{
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 50%;
+    position: relative;
+}
+.navbar{
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding-top:25px;
+    margin: 0 100px;
+}
