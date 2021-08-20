@@ -40,6 +40,7 @@ li a{
     margin: 0 100px;
 }
 .content{
+    display: inline-block;
     color: white;
     text-align: center;
     margin-top: 10%;
