@@ -26,7 +26,7 @@ li a{
     height:35px;
     cursor:pointer;
     border-style: solid;
-    border-color: white;
+    border-color: #780067;
     border-radius: 50%;
     position: relative;
 }
@@ -43,7 +43,8 @@ li a{
     display: inline-block;
     color: white;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
+    width: 100%;
 }
 button {
     width: 100px;
