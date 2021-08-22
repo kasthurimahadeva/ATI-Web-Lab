@@ -84,7 +84,7 @@ button{
     overflow: hidden;
 }
 span{
-    background:white;
+    background:black;
     height: 100%;
     width: 0;
     border-radius: 25px;
