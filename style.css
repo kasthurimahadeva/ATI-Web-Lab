@@ -1,0 +1,14 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:serif;
+}
+div.main{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://c0.wallpaperflare.com/preview/383/148/988/macbook-pro-office-perspective-laptop.jpg');
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
