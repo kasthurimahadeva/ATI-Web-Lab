@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.main{
+    background-image: linear-gradient( rgba(148, 112, 112, 0.88), rgba(78, 75, 122, 0.53)),
+    url('photo-1542744094-3a31f272c490.jpg');
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+ul li{
+    list-style:none;
+    display: inline;
+    margin-left:20px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(19, 3, 3);
+    text-transform: uppercase;
+}
+
+.logo{
+    width:75px;
+    height:75px;
+    cursor:pointer;
+    border:rgb(31, 12, 12) solid 2px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:0px 0px 20px rgba(39, 37, 66, 0.53); 
+}
+.navbar{
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding-top:25px;
+    margin: 0 100px;
+}
+
+.content{
+    position:center;
+    display: inline-block;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    margin-top: 20%;
+    margin-left:30%; 
+    max-width:80%; 
+   
+}
+
+ .button1 {
+     position: center;
+    width: 100px;
+    padding: 10px ;
+    margin: 20px ;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #f50526;
+    border-radius: 25px;
+    background: transparent;
+}
+.button2 {
+    position: center;
+    width: 100px;
+    padding: 10px ;
+    margin: 20px ;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #f50526;
+    border-radius: 25px;
+    background: transparent;
+}
+
+button:hover {
+    background: #737fa8;
+    color: rgb(94, 79, 79);
+}
+p{ 
+    text-align:center;
+    font-size:30px;
+   
+}
+
+
+
+
+        
+        
+        
+
