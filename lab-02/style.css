@@ -8,7 +8,7 @@ div.main{
     background-image: url("phone.jpg") ; 
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(165, 143, 201, 0.75), rgba(39, 37, 35, 0.75)),  url("phone.jpg");
+    background-image: linear-gradient(rgba(78, 67, 116, 0.75), rgba(219, 63, 63, 0.75)),  url("phone.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
