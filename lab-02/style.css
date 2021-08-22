@@ -73,14 +73,11 @@
  
  div.btn{
      width: 30%;
-     top: 50%;
-     padding-top: 100px;
-     padding-left: 250px;
-     float:left;
+     top: 700%;
+     padding-top: 65%;
+     padding-left: 25%;
      text-align:center;
-     transform:translate(-0%)
-
-    
+     transform:translate(20%)
  }
  
  span{
