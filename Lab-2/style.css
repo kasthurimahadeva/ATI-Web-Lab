@@ -5,7 +5,7 @@
 }
 
 div.main {
-    background-image: url("mac.jpg"), linear-gradient(rgba(173, 164, 164, 0.795),rgba(173, 164, 164, 0.795));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("mac.jpg");
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -35,9 +35,9 @@ ul  li  a {
 .navbar {
     width: 85%;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 50px;
+    justify-content: space-between;
+    align-item: center;
+    margin: auto;
     padding-top: 25px;
 }
 
