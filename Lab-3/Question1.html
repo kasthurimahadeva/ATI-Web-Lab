@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PalindromeCheck</title>
+    <script>
+        function isPalindrome(str) {
+            for(let i=0; i<str.length; i++) {
+                if(str[i] !== str[str.length - 1 - i])
+                    return console.log('not a Palindrome!!!');
+            }
+            return console.log('Palindrome :)');
+        }
+        isPalindrome('racecar');
+
+        /* ES6
+        const isPalindrome = (str) => {
+            return str === str.split('').reverse().join('');
+        } */
+    </script>
+</head>
+<body>
