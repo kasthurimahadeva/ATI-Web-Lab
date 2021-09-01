@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:serif;
+}
+div.main{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://c0.wallpaperflare.com/preview/383/148/988/macbook-pro-office-perspective-laptop.jpg');
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+ul li{
+    list-style:none;
+    display: inline;
+    margin-left:20px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.logo{
+    width:75px;
+    height:75px;
+    cursor:pointer;
+    border:rgb(241, 241, 241) solid 2px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+.navbar{
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding-top:25px;
+    margin: 0 100px;
+}
+div.content{
+    display: inline-block;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+    margin-left:20%;	
+    max-width:80%; 
+} 
+button {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: transparent;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 30px;	
+}
+button:hover {
+  background-color: #3652AF;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

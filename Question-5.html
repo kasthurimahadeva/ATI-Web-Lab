@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question#5</title>
+    <style>
+        div{
+            margin-top:30px;
+        }
+        div .class1 {
+            margin-top:50px;
+        }
+        label, p{
+            font-weight:bold;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Personal data Collection Sheet</h1>
+        <p>Sent your personal data using following form</p>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" style="width: 250px;">
+            </div>
+            
+            <div class="class1"> 
+                 <label for="comments">Comments:</label>
+                 <textarea id="comments" cols="20" rows="6">write your comments here.</textarea>
+            </div>
+            <div>
+                <label for="nic">NIC:</label>
+                <input type="text"id="nic" style="width: 250px;">
+            </div>
+            <div>
+                <label for="interest">Area of Interests:</label>
+                <br>
+                Maths<input type="checkbox" id="interest">
+                Biology<input type="checkbox" id="interest">
+                Chemistry<input type="checkbox" id="interest">
+                Physics<input type="checkbox" id="interest">
+                Computer Science<input type="checkbox" id="interest">
+            </div>
+            
+            <div>
+                <label>Sex:</label><br>
+                <label for="Male">Male</label> 
+                <input type="radio" id="Male"  name="sex" value="male" checked >
+
+                <label for="Female">female</label>
+                <input type="radio" id="Female" name="sex" value="female">
+                <br>
+            </div>
+            <div>
+                <label for="level">Level:</label><br />
+                <select id="level" name="level">
+                <option value="admitted">Admitted</option>
+                <option value="">option1</option> 
+                <option value="">option2</option> 
+                </select>
+            </div>
+            <div>
+                <button>submit</button> 
+                <button>Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

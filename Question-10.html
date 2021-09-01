@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question#10</title>
+    <style>
+        
+        div{
+            max-width:25%;
+        }
+        fieldset{
+            border-color: green;
+            border-style:solid;
+        }
+        input, textarea,select{
+            margin-bottom:10px;
+        }
+        .cls1{
+            background-color: yellow;
+        }
+        
+        textarea{
+            width: 200px;
+            height:50px;
+            overflow-y:scroll;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <form>
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="cls1" value="D.Jayasinghe"><br>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="name" value="asdfghj"><br>
+                <label for="textA">Address:</label><br>
+                <textarea name="textA" id="" cols="30" rows="10"  placeholder="34, Galle Rd."></textarea><br>
+                <label >Gender:</label>
+                <input type="radio" name="gender" checked>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" >
+                <label for="gender">Female</label><br>
+                <label for="country">County:</label><br>
+                <select name="country" id="country"size="3" >
+                    <option value="india">India</option>
+                    <option value="SriLanka" selected >SriLanka</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select><br>
+                <input type="checkbox" checked>
+                <label > I agree with terms and conditions.</label><br>
+                <button>Submit</button>
+                <button>Reset</button>
+            </fieldset>
+        </form>
+    </div>    
+</body>
+</html>
