@@ -8,4 +8,4 @@ function titleCase(str) {
     return splitStr.join(' '); 
  }
  
- document.write(titleCase("my pet name is crazy and she is very cute."));
+ document.write(titleCase("my pet name is crazy."));
