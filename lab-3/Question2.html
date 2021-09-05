@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converting first letter of each word as Upper case in a given string</title>
+</head>
+<body>
+    <script>
+        function convert(sentence){
+           var splitedSentence= sentence.split(" ");
+           var newSplitedSentence=splitedSentence.map(
+               function (splitedSentence){
+                    return splitedSentence.replace(splitedSentence.charAt(0),splitedSentence.charAt(0).toUpperCase());
+               }); 
+    
+            console.log(newSplitedSentence.join(" "));
+
+         }
+        convert("hello every one and welcome to javascript");
+    </script>
+</body>
+</html>

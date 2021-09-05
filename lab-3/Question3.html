@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star patturn printing</title>
+</head>
+<body>
+    <script>
+        let row=11;
+        let display="";
+        for(let a=1;a<=(row+1)/2;a++){
+            for(let b=1;b<=(row+1)/2-a;b++){
+                display+="  ";
+            }
+            for(let c=1;c<=a;c++){
+                display+="* ";
+            }
+            display+="\n";
+        }
+        for(let x=1;x<=(row+1)/2-1;x++){
+            for(let y=1;y<=x;y++){
+                display+="  ";
+            }
+            for(let z=1;z<=(row+1)/2-x;z++){
+                display+="* ";
+            }
+            display+="\n";
+        }
+        console.log(display);
+    </script>
+</body>
+</html>

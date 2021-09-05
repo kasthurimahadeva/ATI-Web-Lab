@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chunk Monkeuy</title>
+</head>
+<body>
+    <script>
+        function chunkArrayInGroups(arr,size){
+            var newArray=[];
+            while(arr.length>0){
+                newArray.push(arr.slice(0,size));
+                arr=arr.slice(size);
+            }
+            return newArray;
+        }
+
+        console.log(chunkArrayInGroups(['a','b','c','d'],2));
+    </script>
+</body>
+</html>

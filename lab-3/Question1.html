@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(text){
+            let smallText=text.toLowerCase().replace(/[\W_]/g ,""); // /[\W_]/g refers global regex of inverse of word characters and underscores(Any non-word character.)
+            let reverseText=smallText.split("").reverse().join("");
+            if(reverseText===smallText){
+                console.log(`${text} is a palindrome`);
+            }
+            else{
+                console.log(`${text} is a not palindrome`);
+            }
+        }
+        isPalindrome("Tenet");
+    </script>
+</body>
+</html>
