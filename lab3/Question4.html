@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>longest word</title>
+</head>
+<body>
+    <script>
+        function lengthoflongestword(sentence){
+            var spilitedsentence=sentence.split(" ");
+            var longestword=0;
+            for(var i=0;i<spilitedsentence.length; i++){
+                if(spilitedsentence[i].length>longestword)
+                    longestword=spilitedsentence[i].length;
+            }
+            return longestword;
+        }
+        console.log(lengthoflongestword("hello i love this world."));
+    </script>
+</body>
+</html>

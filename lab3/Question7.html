@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>confirm the ending</title>
+</head>
+<body>
+     <script>
+          function confirmending(str,target){
+              var strlength=str.length;
+              var targetlength=target.length;
+              return str.slice(strlength-targetlength)===target;
+          }
+          console.log(confirmending("Bastian","n"))
+     </script>
+</body>
+</html>

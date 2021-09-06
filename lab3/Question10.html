@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Falsy Bouncer</title>
+</head>
+<body>
+    <script>
+        function bouncer(arr){
+            var anotherArr=[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]){
+                    anotherArr.push(arr[i]);
+                }
+                else{
+                    continue;
+                }
+            }
+            return anotherArr;
+        }
+        console.log(bouncer([7, "ate", "", false, 9]));
+    </script>
+</body>
+</html>
