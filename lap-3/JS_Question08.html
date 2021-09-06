@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function chunk(arr, size) {
+      var newArr = [];
+      // x is less than or equals arr.length.
+      for(var x = 0; x <= arr.length; x++){
+         newArr.push(arr.splice(0, size));
+      }
+      
+      if (arr.length){
+         newArr.push(arr);
+      }
+      return newArr;
+    }
+
+   document.write(chunk(['a', 'b', 'c', 'd'], 2));
+
+     </script>   
+</body>
+</html>
