@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>spinal case</title>
+</head>
+<body>
+       <script>
+           function spinalcase(str) {
+            var sentence1=str.replace(/([a-z])([A-Z])/g,"$1 $2");
+            var str=sentence1. split(/[\s_]/g).join("-");
+            return str;
+}
+             console.log(spinalcase("This Is Spinal Tap"));
+             console.log(spinalcase("thisIsSpinalTap"));
+             console.log(spinalcase("The_Andy_Griffith_Show"));
+             console.log(spinalcase("Teletubbies say Eh-oh"));
+             console.log(spinalcase("AllThe-small Things"));
+
+       </script>
+</body>
+</html>
