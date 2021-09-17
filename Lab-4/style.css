@@ -1,0 +1,69 @@
+* {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("mac.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 20px;
+}
+
+ul  li  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 70px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}  
+
+.navbar {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+}
+
+button {
+    border: 2px solid #e93e3e;
+    border-radius: 20px;
+    color: #fff;
+    background: transparent;
+    margin: 20px 10px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: bold;
+}
+button:hover {
+    border: 2px solid #fff;
+    background: #e93e3e;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
