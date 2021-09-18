@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.main{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)), url("pic.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+form{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.content{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15%;
+}
+button {
+    width: 100px;
+    padding: 15px;
+    border-style: solid;
+    border-color: blue;
+    color: white;
+    background: transparent;
+    margin: 20px 10px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+button:hover {
+    background: blue;
+    color: white;
+}
+input[type = "text"], input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+input[type = "text"]:focus, input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}

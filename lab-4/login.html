@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="login.css">
+        <script language="javascript" type="text/javascript" src="loginValidation.js">
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="content">
+                <form name="myForm" onsubmit="event.preventDefault()">
+                    <h1>Welcome Back!</h1>
+                    <input type="text" placeholder="Username" name="username" id="username"> 
+                    <input type="password" placeholder="Password" name="password" id="password">
+                    <a href="" style="color: white;">Are You Forget Your Password?</a>
+                    <br>
+                    <button onclick="javascript:validateForm()">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
