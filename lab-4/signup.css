@@ -4,7 +4,7 @@
     font-family: serif;
 }
 .main{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)), url("pic.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)), url("bg.png");
     height: 100vh;
     width: 100%;
     background-position: center;  
