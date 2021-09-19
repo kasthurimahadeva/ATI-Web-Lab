@@ -52,7 +52,9 @@ button:hover {
     background: blue;
     color: white;
 }
-input[type = "text"], input[type = "password"]{
+input[type = "text"], 
+input[type = "password"], 
+input[type = "email"]{
     border: 0;
     background: none;
     display: block;
@@ -66,7 +68,9 @@ input[type = "text"], input[type = "password"]{
     border-radius: 24px;
     transition: 0.25s;
 }
-input[type = "text"]:focus, input[type = "password"]:focus{
+input[type = "text"]:focus, 
+input[type = "password"]:focus, 
+input[type = "email"]:focus{
     width: 280px;
     border-color: #2ecc71;
 }
