@@ -13,6 +13,16 @@ div.main {
     background-size: cover;
     background-position: center;
 }
+/*.aboutus {
+    height: 40vh;
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+}
+.contactus {
+    height: 60vh;
+    background-color: rgb(165, 165, 165);
+    text-align: center;
+}*/
 ul > li {
     list-style-type: none;
     display: inline;

@@ -8,7 +8,7 @@
 }
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("formbg.jpg");
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,6 +40,10 @@ input {
     border-radius: 25px;
     font-size: 15px;
     font-weight: bold;
+}
+input:focus{
+    outline: none;
+    background-color: rgb(255, 255, 100);
 }
 button {
     background-color: #fff;
