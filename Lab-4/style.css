@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 * {
-    font-family: serif;
+    font-family: "Poppins",serif;
     margin: 0;
     padding: 0;
 }
@@ -24,12 +26,18 @@ ul  li  a {
     color: #fff;
     text-transform: uppercase;
 }
-
+ul  li  a:hover {
+    color: #e93e3e;
+    background-color: #fff;
+    padding: 5px 5px;
+    font-weight: bold;
+}
 .logo {
     width: 70px;
     border: 1px solid #000;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0px 0px 20px #e93e3e;
 }  
 
 .navbar {
@@ -60,6 +68,7 @@ button {
 button:hover {
     border: 2px solid #fff;
     background: #e93e3e;
+    cursor: pointer;
 }
 
 .btn {
