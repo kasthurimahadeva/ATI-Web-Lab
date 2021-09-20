@@ -6,7 +6,6 @@ function signUp() {
         users.username = document.getElementById("username").value;
         users.email = document.getElementById("email").value;
         users.password = document.getElementById("password").value && CheckPassword(password);
-        
 
         var postUser = new XMLHttpRequest(); // new HttpRequest instance to send user details
 
@@ -23,7 +22,7 @@ function signUp() {
         // Convert the data in "users" object to JSON format before sending to the server.
         postUser.send(JSON.stringify(users));
         
-    }
+}
     else {
         alert("Password column and Confirm Password column doesn't match!")
     }
