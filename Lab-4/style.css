@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 div.main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("mac.jpg");
     height: 100vh;
@@ -14,13 +13,11 @@ div.main {
     background-size: cover;
     background-position: center;
 }
-
 ul > li {
     list-style-type: none;
     display: inline;
     margin: 0 20px;
 }
-
 ul  li  a {
     text-decoration: none;
     color: #fff;
@@ -28,9 +25,9 @@ ul  li  a {
 }
 ul  li  a:hover {
     color: #e93e3e;
-    background-color: #fff;
+    /*background-color: #fff;
     padding: 5px 5px;
-    font-weight: bold;
+    font-weight: bold;*/
 }
 .logo {
     width: 70px;
@@ -39,7 +36,6 @@ ul  li  a:hover {
     cursor: pointer;
     box-shadow: 0px 0px 20px #e93e3e;
 }  
-
 .navbar {
     width: 85%;
     display: flex;
@@ -48,13 +44,11 @@ ul  li  a:hover {
     margin: auto;
     padding-top: 25px;
 }
-
 .content {
     color: #fff;
     text-align: center;
     margin-top: 10%;
 }
-
 button {
     border: 2px solid #e93e3e;
     border-radius: 20px;
@@ -70,7 +64,6 @@ button:hover {
     background: #e93e3e;
     cursor: pointer;
 }
-
 .btn {
     margin: 0 auto;
     display: flex;

@@ -6,15 +6,28 @@
     box-sizing: border-box;
     text-align: center;
 }
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("formbg.jpg");
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.close {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: black;
+}
 .signup-container {
     background-color: #B7BED8;
     border: none;
     width: 350px;
     height: auto;
-    padding: 20px 30px;
-    margin: 120px auto;
+    padding: 30px 30px;
+    margin: 150px auto;
     border-radius: 20px;
-    box-shadow: 5px 10px #3f3e3e;
 }
 input {
     padding: 10px 10px;
