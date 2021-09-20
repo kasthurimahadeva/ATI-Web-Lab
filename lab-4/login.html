@@ -9,11 +9,11 @@
 
     <section id="login-window">
         <h1>LOGIN</h1>
-        <form name="login">
-            <input type="text" placeholder="Enter Your Username" class="form-input" name="username">
+        <form name="login"onsubmit="return validate();" action="" method="POST">
+            <input type="text" placeholder="Enter Your Username" class="form-input" name="username" autocomplete="off">
             <p class="error" id="username-error"> * Username is required ! </p>
         
-            <input type="password" placeholder="Enter Your Password" class="form-input" name="password">
+            <input type="password" placeholder="Enter Your Password" class="form-input" name="password" autocomplete="off">
             <p class="error" id="password-error"> * Password is required ! </p>
 
             <button class="login-btn" type="submit"> Login</button>
@@ -29,8 +29,8 @@
             </button>
         </div>
 
-          <p class="form-footer"> Not a member ? <a href="#"> Sign Up</a></p>
+          <p class="form-footer"> Not a member ? <a href="signup.html"> Sign Up</a></p>
     </section>
-
+    <script src="login.js"></script>
 </body>
 </html>
