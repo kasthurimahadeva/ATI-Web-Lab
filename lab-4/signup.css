@@ -8,9 +8,8 @@ body
   {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-image: url("flour.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
       background-size: cover;
+      background-position-y: 10%;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -22,11 +21,12 @@ h2
       text-align: center;
       margin-bottom: 10px;
       font-size: 25px;
+      color: white;
   }
   
 .container 
   {
-      background-color: #fff;
+      
       width: 400px;
       padding: 20px;
   }
@@ -39,7 +39,7 @@ h2
 .form-control label 
   {
       display: block;
-      color: #777;
+      color: rgb(255, 255, 255);
       margin-bottom: 5px;
   }
   
@@ -64,9 +64,10 @@ button
       border: none;
       font-size: 16px;
       color: white;
-      background-color: blue;
+      background-color: #2196f3;
       cursor: pointer;
       padding: 10px;
+      border-radius: 20px;
   }
   
 .form-control small     
