@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>SignUp Page</title>
+        <link  href="signUpStyle.css" rel="stylesheet">
+        <script src="signupValidation.js"></script>
+    </head>
+    <body>
+        <div class="center">
+            <h1>SignUp</h1>
+            <form method="POST" name="signupForm" onsubmit="event.preventDefault()">
+                <div class="txt_field">
+                    <input type="text" name="fname" id="fname" required>
+                    <label>FirstName</label>
+                    <span></span>
+                </div>
+                <div class="txt_field">
+                    <input type="text"  name="lname" id="lname" required>
+                    <label>LastName</label>
+                    <span></span>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required name="email" id="email">
+                    <label>Email Address/Username</label>
+                    <span></span>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" id="password" required>
+                    <label>Password</label>
+                    <span></span>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password2" id="password2" required>
+                    <label>Confirm Password</label>
+                    <span></span>
+                </div>
+                <div class="check_box">
+                    <input type="checkbox">I accept the <a href="#">Terms of use</a> & <a href="#">Privacy Policy</a>
+                  </div>
+                <input type="submit" value="SignUp" onclick="signupValidate()">
+                <div class="signin_link">
+                    Already have an account?<a href="login.html">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
