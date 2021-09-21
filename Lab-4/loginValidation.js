@@ -9,5 +9,5 @@ function validateLogin() {
          alert("Please Enter your Password!");
             return false;
     }
-    alert('Login Successful');
+    alert('Login Successful!');
 }
