@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: sans-serif;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgb(0,0,0,0.75)), url("flour.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 10%;
 }
