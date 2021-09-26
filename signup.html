@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signupValidation.js"></script>
+  </head>
+  <body>
+<form class="signup-box" name="myForm" onsubmit="return signupValidate()">
+  <h1>Sign Up</h1>
+  <div class="textbox">
+    <i class="fas fa-envelope"></i>
+    <input type="email" placeholder="E-mail" name="email">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="First name" name="fname">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Last name" name="lname">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username" name="username">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"  onclick="show()"></i>
+    <input type="password" placeholder="Password" name="password">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"  onclick="show()"></i>
+    <input type="password" placeholder="Confirm Password" name="password2">
+  </div>
+  <div id="errorbox" style="color: wheat;"></div><br>
+
+  <button class="btn" >Sign up</button>
+  <button class="btn" onclick="cancel()">Cancel</button>
+</form>
+  </body>
+</html>
