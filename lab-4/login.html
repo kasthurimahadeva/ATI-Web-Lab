@@ -19,13 +19,13 @@
                 <div class="form-title">Login form</div>
                 <form action="#">
                     <div class="data">
-                        <input type="text" placeholder="User name" id="username">
+                        <input type="text" placeholder="User Name" id="username">
                         <label>X Error!</label>
                     </div>
                     <div class="data">
                         <input type="Password" placeholder="Password" id="password">
-                        <span>
-                            <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                        <span class="login-pass">
+                            <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="show()"></i>
                         </span>
                         <label>X Error!</label>        
                     </div>
@@ -43,7 +43,7 @@
 
     <script>
         var state=false;
-        function toggle(){
+        function show(){
             if(state){
                 document.getElementById("password").setAttribute("type","password");
                 document.getElementById("eye").style.color="#7a797e";
