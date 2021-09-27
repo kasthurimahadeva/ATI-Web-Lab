@@ -2,24 +2,26 @@
 <html>
     <head>
         <title>Signup</title>
-        <link href="signup.css" rel="stylesheet">
+        <link href="signup.css" rel="stylesheet" type="text/css">
+        <script src="signupValidation.js" type="text/javascript"></script>
     </head>
     <body>
+      <script type ="text/javascript" src="script.js"></script>
           <div class="signupbox">
             <img src="avatar.png" class="avatar">   
               <h1> Sign Up Now</h1>
-              <form>
-                <p>First Name</p>
-                <input type="text" name="" placeholder="Enter First name">
-                <p>Last Name</p>
-                <input type="text" name="" placeholder="Enter Last name">
+              <form class="form">
+                <p>Full Name</p>
+                <input type="text" id="fullname" placeholder="Enter Full name">
+                <p>User Name</p>
+                <input type="text" id="username" placeholder="Enter User name">
                 <p>Emails</p>
-                <input type="email" name="" placeholder="Enter Email">
+                <input type="email" id="emails" placeholder="Enter Email">
                 <p>Password</p>
-                <input type="password" name="" placeholder="Enter Password">
+                <input type="password" id="password"  placeholder="Enter Password">
                 <p>Confirm Password</p>
-                <input type="password" name="" placeholder="Enter Password">
-                <input type="submit" name="" value="Signup">
+                <input type="password" id="confirmpassword" placeholder="Enter Password">
+                <input type="submit"  value="Signup" onclick="javascript:signupValidation()">
             </form>
             <p>By clicking the signup button, you  agree to our <br>
             <a href="#">Terms and Condition</a>and <a href="#">Policy and Privacy</a>
