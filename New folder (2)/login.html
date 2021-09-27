@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="login.css" rel="stylesheet" type="text/css">
+        <script src="loginValidation.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <script type ="text/javascript" src="script.js"></script>
+         <div class="loginbox">
+             <img src="avatar.png" class="avatar">
+             <h1>Login Here</h1>
+             <form method="POST">
+                 <p>User Name</p>
+                 <input type="text" id="username" placeholder="Enter user name">
+                 <p>Password</p>
+                 <input type="password" id="password" placeholder="Enter Password">
+                 <input type="submit" value="Login" onclick="javascript:loginValidation()">
+                 <br>
+                 <a href="#">Forgot your password</a> <br>
+                 <a href="#">Don't have an account</a>
+             </form>
+         </div>
+    </body>
+</html>
