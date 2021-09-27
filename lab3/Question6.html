@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Mutations</title>
+</head>
+<body>
+    <script>
+        function mutation(arr){
+            var firstStr=arr[0].toLowercase();
+            var secondStr=arr[1].toLowercase();
+            for(var i=0;i<secondStr.length;i++){
+                if(firststr.indexof(secondstr[i])<0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(mutation(["hello", "hey"]));
+        console.log(mutation(["hello", "hello"]));
+        console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+        console.log(mutation(["Mary", "Army"]));
+        console.log(mutation(["Mary", "Aarmy"]));
+        console.log(mutation(["Aluien", "line"]));
+        console.log(mutation(["floor", "for"]));
+        console.log(mutation(["hello", "neo"]));
+        console.log(mutation(["voodoo", "no"]));
+        console.log(mutation(["ate", "date"]));
+        console.log(mutation(["Tiger", "Zebra"]));
+        console.log(mutation(["Noel", "Ole"]));
+    </script>
+</body>
+
+</html>
