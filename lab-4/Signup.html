@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/signupValidation.js"></script>
+    <title>GamerZone Signup Page</title>
+</head>
+<body>
+    <div class="main">
+        <div class="form-full-body">
+            <div class="container">
+                <div class="form-close"onclick="navigateToMain()">X</div>
+                <div class="logo-box">
+                    <img src="Image/logo.png" alt="logo here" class="logo">
+                </div>
+                <div class="form-title">Signup form</div>
+                <form action="#" id="form">
+                    <div class="data">
+                        <input type="text" name="fname" placeholder="First Name" id="fname">
+                        <label class="error"></label>  
+                     </div>
+                     <div class="data">
+                        <input type="text" name="lname" placeholder="Last Name" id="lname">
+                        <label class="error"></label>  
+                     </div>
+                     <div class="data">
+                      <input type="text" name="email" placeholder="Email Address" id="email">
+                      <label class="error"></label>  
+                     </div>
+                     <div class="data">
+                        <input type="text" name="username" placeholder="User Name" id="username">
+                        <label class="error"></label>  
+                     </div>
+                     <div class="data">
+                        <input type="password" name="password" placeholder="Enter Password" id="password">
+                        <span class="signup-password">
+                            <i class="fa fa-eye" aria-hidden="true" id="eye1" onclick="showPassword()"></i>
+                        </span>
+                        <label class="error"></label>  
+                     </div>
+                     <div class="data">
+                        <input type="password" name="cpassword" placeholder="confirm Password" id="c-password">
+                        <span class="signup-c-password">
+                            <i class="fa fa-eye" aria-hidden="true" id="eye2" onclick="showCPassword()"></i>
+                        </span>
+                        <label class="error"></label>  
+                     </div>
+                     <button type="submit" id="submit">Sign up</button>
+                     <div class="signup-link" id="signin-link">
+                        Have a account? <a href="login.html">Signin now</a>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var state=false;
+        function showPassword(){
+            if(state){
+                document.getElementById("password").setAttribute("type","password");
+                document.getElementById("eye1").style.color="#7a797e";
+                state=false;
+            }else{
+                document.getElementById("password").setAttribute("type","text");
+                document.getElementById("eye1").style.color="#5887ef";
+                state=true;
+            }
+        }
+        function showCPassword(){
+            if(state){
+                document.getElementById("c-password").setAttribute("type","password");
+                document.getElementById("eye2").style.color="#7a797e";
+                state=false;
+            }else{
+                document.getElementById("c-password").setAttribute("type","text");
+                document.getElementById("eye2").style.color="#5887ef";
+                state=true;
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato",sans-serif; 
+}
+body{
+    font-weight:400;
+    font-size: 16px;
+    line-height:1.7;
+    color:#777;
+    padding:0px;
+}
+.main{
+    position:relative;
+    background-image: linear-gradient(to bottom, rgba(38, 7, 110, 0.726), rgba(2, 94, 48, 0.856)),
+    url('../Image/bg3.jpg');
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+/* form design */
+.form-full-body{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:15px;
+    background: rgb(255, 255, 255);
+    width: 350px;
+    padding: 30px;
+    box-shadow:0px 0px 30px rgb(14, 1, 63);
+    border-radius: 2px;
+    
+  }
+
+/* form close button styling */
+.form-close{
+    position: absolute;
+    top: 0;
+    right:14px;
+    margin-top:5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Logo styling */
+.logo-box{
+    position:relative;
+    display: block;
+    left:40%;
+    transform: translate(-50px -50px);
+}  
+.logo{
+    height: 60px;
+    border:rgb(255, 255, 255) solid 4px;
+    border-radius: 50px;
+    box-shadow: 0 0px 5px rgba(0, 36, 9, 0.4);
+}
+
+/* form title styling */
+.form-title{
+    font-family: "Lato",sans-serif; 
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* form styling */
+
+.container form{
+    margin-top: -20px;
+  }
+
+.container form .data{
+    height: 35px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+input{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    border: 1px solid silver;
+}
+::placeholder{
+    color: #9a9a9a;
+    font-weight: 400;
+}
+.login-pass{
+    position:absolute;
+    right: 35px;
+    transform: translate(0,-50%);
+    top:58%;
+    cursor: pointer;
+}
+
+.signup-password{
+  position:absolute;
+  right: 35px;
+  transform: translate(0,-50%);
+  top:67%;
+  cursor: pointer;
+}
+
+.signup-c-password{
+  position:absolute;
+  right: 35px;
+  transform: translate(0,-50%);
+  top:77%;
+  cursor: pointer;
+}
+
+
+.fa{
+    font-size:20px;
+    color: #7a797e;
+}
+form .data label{
+    font-family: "Lato",sans-serif; 
+    font-size: 12px;
+    color: tomato;
+    
+  }
+
+
+button {
+width: 290px;
+padding: 15px;
+border: 2px solid #fcfcfc;
+color: white;
+background: linear-gradient(to bottom , rgb(68, 6, 214), rgb(5, 126, 156));
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+border-radius: 5px;
+font-family: "Lato",sans-serif;
+}
+button:hover{
+box-shadow:0px 0px 10px rgb(104, 55, 241);
+font-family: "Lato",sans-serif;
+}
+button:active{
+box-shadow:0px 0px 5px rgb(149, 114, 243);
+font-family: "Lato",sans-serif;
+}
+
+form .forgot-pass{
+    font-size:14px;
+    font-family: "Lato",sans-serif;
+    text-align: center;
+}
+form .forgot-pass a{
+  color: #3317d1;
+  font-family: "Lato",sans-serif; 
+  text-decoration: none;
+}
+form .forgot-pass a:hover{
+  text-decoration: underline;
+  font-family: "Lato",sans-serif;
+}
+
+
+form .signup-link, form .signin-link{
+  text-align: center;
+  font-family: "Lato",sans-serif;
+}
+form .signup-link a, form .signin-link a{
+  color: #762dec;
+  text-decoration: none;
+  font-family: "Lato",sans-serif;
+}
+form .signup-link a:hover, form .signin-link a:hover{
+  text-decoration: underline;
+  font-family: "Lato",sans-serif;
+}
