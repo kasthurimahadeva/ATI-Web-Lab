@@ -19,34 +19,34 @@
                     <img src="Image/logo.png" alt="logo here" class="logo">
                 </div>
                 <div class="form-title">Signup form</div>
-                <form action="#">
+                <form action="#" id="form">
                     <div class="data">
-                        <input type="text" name="fname" placeholder="First Name">
-                        <label>X Error!</label>  
+                        <input type="text" name="fname" placeholder="First Name" id="fname">
+                        <label class="error"></label>  
                      </div>
                      <div class="data">
-                        <input type="text" name="lname" placeholder="Last Name">
-                        <label>X Error!</label>  
+                        <input type="text" name="lname" placeholder="Last Name" id="lname">
+                        <label class="error"></label>  
                      </div>
                      <div class="data">
-                      <input type="email" name="email" placeholder="Email Address">
-                      <label>X Error!</label>  
+                      <input type="email" name="email" placeholder="Email Address" id="email">
+                      <label class="error"></label>  
                      </div>
                      <div class="data">
                         <input type="password" name="password" placeholder="Enter Password" id="password">
                         <span class="signup-password">
                             <i class="fa fa-eye" aria-hidden="true" id="eye1" onclick="showPassword()"></i>
                         </span>
-                        <label>X Error!</label>  
+                        <label class="error"></label>  
                      </div>
                      <div class="data">
                         <input type="password" name="cpassword" placeholder="confirm Password" id="c-password">
                         <span class="signup-c-password">
                             <i class="fa fa-eye" aria-hidden="true" id="eye2" onclick="showCPassword()"></i>
                         </span>
-                        <label>X Error!</label>  
+                        <label class="error"></label>  
                      </div>
-                     <button>Sign up</button>
+                     <button type="submit" id="submit">Sign up</button>
                      <div class="signup-link" id="signin-link">
                         Have a account? <a href="login.html">Signin now</a>
                      </div>
