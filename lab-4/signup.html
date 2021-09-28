@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <script type="text/javascript" src="signupValidation.js"></script>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+        <body>
+            <script type="text/javascript" src="script.js"></script>
+            <div class="container">
+                <div class="title">SIGNUP</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details" id="fullName">Full Name</span>
+                            <input type="text" placeholder="Enter Your Full Name">
+                        </div>
+                        <div class="input-box">
+                            <span class="details" id="username">Username</span>
+                            <input type="text" placeholder="Enter Your Username">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">E-mail</span>
+                            <input type="text" id="e-mail" placeholder="Enter Your E-mail">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" id="phoneNumber" placeholder="Enter Your Phone Number">
+                        </div> 
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="password" placeholder="Enter Your Password">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input type="text" id="confirmPassword" placeholder="Enter Your Confirm Password">
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span  class="gender">Male</span> 
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span  class="gender">Female</span> 
+                            </label>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Submit"  onclick="javascript:validateSignup()">
+                        </div>
+                    </div>
+            </form>
+        </div>
+        </body>
+</html>
