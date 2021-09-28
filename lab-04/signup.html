@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup form</title>
+       <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Signup form</h1>
+            <form id="signup-form" name="Signup_form" onsubmit="return call2()">
+                <div class="form-input">
+                    <input type="text" class="input" placeholder="Enter Firstname" id="fname">
+                </div>
+                <div class="form-input">
+                    <input type="text"  class="input" placeholder="Enter Lastname" id="lname">
+                </div>
+                <div class="form-input">
+                    <input type="text"  class="input" placeholder="Enter Email" id="email">
+                </div>
+                <div class="form-input">
+                    <input type="text"  class="input" placeholder="Enter Username" id="uname">
+                </div>
+                <div class="form-input">
+                    <input type="password"  class="input" placeholder="Enter password" id="pass1" onkeyup="return validate()" maxlength="12" minlength="8">
+                </div>
+                <div class="form-input">
+                    <input type="password"  id="pass2"class="input" placeholder="Enter confirm-password"  maxlength="12" minlength="8">
+                </div>
+                
+                <div id="errorbox"></div>
+                <input type ="submit" name="" class="button" value="Signup" id="signup" onclick="validateSignup()">
+                <br><br>
+                <a href="login.html">Existing user, login !?</a> 
+            
+            <br>
+            <div class="validation">
+            <b>[password validation:</b>
+                <i id="upper">Atleast one uppercase</i>,
+                <i id="lower">Atleast one lowercase</i>,
+                <i id="special_char">Atleast one one special sympol</i>,
+                <i id="number">Atleast one number</i>,
+                <i id="length">Atleast 8 characters</i>.]
+            </div>
+        </form>
+        </div>
+        <script type="text/javascript" src="passwordvalidation.js"></script>
+        <script type="text/javascript" src="signupvalidation.js"></script>
+    </body>
+</html>

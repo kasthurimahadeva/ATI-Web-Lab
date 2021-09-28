@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: arial;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 239, 230);
+}
+.container{
+    width: 400px;
+    height: 580px;
+    text-align: center;
+    box-shadow: 0 0 20px red, 0 0 40px red;
+    animation: animate 2s linear infinite;
+    color:rgb(109, 13, 173);
+    margin-top: 0%;
+    
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 20px red, 0 0 40px red;
+    }
+    25%{
+        box-shadow: 0 0 40px red, 0 0 80px red;
+    }
+    50%{
+        box-shadow: 0 0 20px red, 0 0 40px red;
+    }
+    75%{
+        box-shadow: 0 0 40px red, 0 0 80px red;
+    }
+    
+}
+.container h1{
+    margin: 40px 0;
+    text-shadow: 0 0 20px aqua;
+}
+.form-input{
+    margin: 10px 0;
+}
+.input{
+    width: 350px;
+    height:45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size:20px;
+    text-align: center;
+    box-shadow: 0 0 30px tomato;
+}
+.button{
+    width: 200px;
+    padding: 10px;
+    font-size:20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    box-shadow:0 0 20px dodgerblue;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ac248a;
+ }
+
+
+ a:hover{
+    color: red;
+ }
+ .validation{
+     box-sizing: content-box;
+     font-size: 9px;
+ }
+
+ 
