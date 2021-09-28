@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+       <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login form</h1>
+            <form id="login-form" name="login_form" onsubmit="return call1()">
+                <div class="form-input">
+                    <input type="text" name="uname" class="input" placeholder="Enter Username" id=username required="">
+                </div>
+                <div class="form-input">
+                    <input type="password" name="upassword" class="input" placeholder="Enter password" id= "password" required="">
+                </div>
+                <div id="errorBox"></div>
+                <input type ="submit" name="" class="button" value="Login">
+                <br><br>
+                <a href="signup.html">Register for new account ?</a> 
+                <br><br>
+                     
+                <div class="form_element1">
+                    <a href="#">Forgot password</a>
+                </div> 
+            </form>
+        </div>
+        <script type="text/javascript" src="loginvalidation.js"></script>
+        
+    </body>
+</html>
