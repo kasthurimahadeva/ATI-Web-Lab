@@ -84,4 +84,55 @@
     }
 
     #createTable();
+
+     function insertUserData($firstname, $lastname, $email, $addres, $age){
+
+        $conn = createDBConnection();
+        $sql = "INSERT INTO users (firstname, lastname, email, addres, age)
+                VALUES ('$firstname', '$lastname', '$email', '$addres', '$age')";
+
+        if ($conn->query($sql) === TRUE)
+        {
+            echo "Data successfully inserted";
+        }
+        else
+            {
+                echo "Error:".$conn->error;
+            }
+
+        $conn->close();
+    }
+
+    #insertUserData('Gowthamy','Elango','gowthamy@gmail.com','Pointpedro','22');
+
+    function deleteData($id){
+        $conn = createDBConnection();
+        $sql = "DELETE FROM users WHERE id=$id";
+
+        if ($conn->query($sql) == TRUE) 
+        {
+            echo "Record deleted successfully";
+        }
+        else 
+            { 
+                echo "Error:".$conn->error;
+                }
+    }
+
+    #deleteData(18);
+
+    function updateData(){
+        $conn = createDBConnection();
+        $sql = "UPDATE users SET lastname='Shan' WHERE id=15";
+
+        if ($conn->query($sql) == TRUE){
+            echo "Data updated successfully";
+        }
+        else 
+            {
+                echo "Error: ".$conn->error;
+            }
+
+    }
+    #updateData();
 ?>
