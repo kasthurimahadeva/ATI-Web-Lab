@@ -1,0 +1,42 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(to bottom, rgba(126, 104, 88, 0.8) 0%, rgba(116, 96, 82, 0.8) 100%),
+    url('pic_2.jpg');
+    position: center;
+    background-size: cover;
+}
+
+form{
+    border: 0px solid black;
+    padding: 20px 20px;
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+input[type=text],input[type=email]{
+    width: 54%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 27%;
+  }
+  button:hover{
+      opacity: 0.5;
+  }
+
+  img{
+      width: 43%;
+      float: right;
+  }
