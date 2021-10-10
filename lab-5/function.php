@@ -29,7 +29,7 @@ function createDatabase($dbname){
 //createDatabase("wpdb");
 
 function createDBConnection(){
-    $servername = "localhost";
+        $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "wpdb";
@@ -40,10 +40,10 @@ function createDBConnection(){
             die(" DB Connection failed: ".$conn->connect_error);
         }
 
-        echo "$dbname connected successfully <br>";
+        //echo "$dbname connected successfully <br>";
         return $conn;
 }
-//createDBConnection();
+createDBConnection();
 
 function createTable(){
     $conn = createDBConnection();
@@ -62,5 +62,46 @@ function createTable(){
             echo "Error: ".$conn->error;
         }
     }
-    createTable();
+    //createTable();
+
+    function insertUserData($firstname, $lastname, $email, $address, $age) {
+        $conn = createDBConnection();
+        $sql = "INSERT INTO users (firstname, lastname, email, address, age) 
+        VALUES ('$firstname', '$lastname', '$email', '$address', '$age')";
+        
+        $insertId = 0;
+        if ($conn->query($sql) == TRUE) {
+            echo "Data successfully inserted <br>";
+            //print_r($conn);
+            $insertId = $conn->insert_id;
+        } else {
+            echo "Error: ".$conn->error;
+        }
+        $conn->close();
+        return $insertId;
+    }
+     
+    //insertUserData('DiluShaN', 'Vigneswaran', 'dilushan0314@gmail.com', 'Jaffna', 23);
+
+    function getAllUserData() {
+        $conn = createDBConnection();
+
+        $sql = "SELECT * FROM users";
+        $result = $conn->query($sql);
+
+        #print_r($result);
+        $users = array();
+
+        if ($result->num_rows > 0) {
+            while ($record = $result->fetch_assoc()) {
+                $users[] = $record;
+            }
+        } else {
+            echo "There is no records in the table";
+        }
+        $conn->close();
+        return $users;
+    }
+
+    //getAllUserData();
 ?>
