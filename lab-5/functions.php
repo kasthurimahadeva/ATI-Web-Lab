@@ -38,7 +38,7 @@
             die("Connection failed: ".$conn->connect_error);
         }
 
-        echo "$dbname connected successfully <br>";
+       # echo "$dbname connected successfully <br>";
         return $conn;
     }
     //createDBConnection();
@@ -69,13 +69,33 @@
         
         $insertId = 0;
         if ($conn->query($sql) == TRUE) {
-            echo "Data successfully inserted <br>";
+            #echo "Data successfully inserted <br>";
             $insertId = $conn->insert_id;
         } else {
-            echo "Error: ".$conn->error;
+            #echo "Error: ".$conn->error;
         }
         $conn->close();
         return $insertId;
     }
     //insertUserData("Sivatharan", "Ponsivaranjan", "stn@gmail.com", "Valvettithurai, Polikandy-East, Jaffna.","24");
+
+    function getAllUserData($tbName) {
+        $conn = createDBConnection();
+
+        $sql = "SELECT * FROM $tbName";
+        $result = $conn->query($sql);
+
+        #print_r($result);
+        $users = array();
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $users[] = $row;
+            }
+        } else {
+            echo "There is no records in the table";
+        }
+        $conn->close();
+        return $users;
+    }
 ?>
