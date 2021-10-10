@@ -61,4 +61,21 @@
         }
     }
     //createTable("users");
+
+    function insertUserData($firstname, $lastname, $email, $address, $age) {
+        $conn = createDBConnection();
+        $sql = "INSERT INTO users (firstname, lastname, email, address, age) 
+        VALUES ('$firstname', '$lastname', '$email', '$address', '$age')";
+        
+        $insertId = 0;
+        if ($conn->query($sql) == TRUE) {
+            echo "Data successfully inserted <br>";
+            $insertId = $conn->insert_id;
+        } else {
+            echo "Error: ".$conn->error;
+        }
+        $conn->close();
+        return $insertId;
+    }
+    //insertUserData("Sivatharan", "Ponsivaranjan", "stn@gmail.com", "Valvettithurai, Polikandy-East, Jaffna.","24");
 ?>
