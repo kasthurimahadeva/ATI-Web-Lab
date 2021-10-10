@@ -1,0 +1,55 @@
+body{
+    background:url(1.jpg);
+    font-family: 'Times New Roman', Times, serif; 
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+h1{
+    text-align:center;
+    padding-top: 15px;
+}
+h4{
+    text-align: center;
+}
+form label{
+    display:flex;
+    margin-top:20px;
+    font-size:10px;
+    margin-left: 25px;
+
+}
+form input{
+    width: 480px;
+    padding: 7px;
+    border:black;
+    border:1px solid gray;
+    outline:indigo;
+    margin-left: 25px;
+
+}
+input[type="button"]{
+    width:500px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color: mediumturquoise;
+    color:white;
+    font-size:10px;
+}
+input[type="button"]:hover{
+    background-color: wheat;
+    color: mediumturquoise;
+}
+p{
+    text-align:center;
+    padding-top:20px;
+    font-size:15px;
+}
+.para-2{
+    text-align:center;
+    color:white;
+    font-size:15px;
+    margin-top: -10px;
+}
