@@ -135,4 +135,30 @@
 
     }
     #updateData();
+
+    function getAllUserData(){
+        $conn = createDBConnection();
+
+        $sql = "SELECT * FROM users";
+        $result = $conn->query($sql);
+        $users = array(); 
+
+        if ($result->num_rows > 0)
+        {
+            while ($record = $result->fetch_assoc())
+            {
+               $users[] = $record;
+            }
+        }
+        else 
+            {
+                 echo "There is no records here";
+            }
+     
+        #print_r($users);
+        return $users;
+    }
+
+    #getAllUserData();
+
 ?>
