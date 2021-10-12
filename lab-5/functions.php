@@ -47,7 +47,7 @@
     }
     createDBConnection();                                                //create DB Connection 
 
-
+/*
     function createTable(){
         $conn = createDBConnection();
         $sql = "CREATE TABLE users (
@@ -65,6 +65,25 @@
             echo "Table created Error: ".$conn->error;
         }
     }
-    createTable();                                                       //Create Table                                                          
+    createTable();       */                                                //Create Table                                                          
     
+    // Insert User Data
+    function insertUserData ($Firstname, $Lastname, $Email, $Address, $Age) {
+        $conn = createDBConnection();
+        $sql = "INSERT INTO users (Firstname, Lastname, Email, Address, Age)
+        VALUES ('$Firstname', '$Lastname', '$Email', '$Address', '$Age')";
+
+        $insertId = 0;
+        if ($conn->query($sql) == TRUE){
+            echo "Data sucessfully inserted <br>";
+            print_r($conn);
+            $insertId = $conn->insert_id;
+        }else{
+            echo "Error: ".$conn->error;
+        }
+        $conn->close();
+        return $insertId;
+    }
+
+
 ?>
