@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title> FORM </title>
+    <title>  </title>
+    <link rel="stylesheet" href="userForm.css">
   </head>
   <body>
     <form action = "userData.php" method = "POST">
@@ -30,9 +31,11 @@
     <td><input type = "text" id = "Age" name = "Age"></td>
     </tr>  
     </table>
+    <br>
     <div>
       <input type = "submit" value = "Submit">
     </div>
+    <br>
 </form>
   </body>
 </html>

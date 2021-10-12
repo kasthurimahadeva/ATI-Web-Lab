@@ -1,5 +1,5 @@
 <?php
-    
+   /* 
     function createMysqlConnection(){
         $servername = "localhost";
         $username = "root";
@@ -28,7 +28,7 @@
         return $conn;
     }
     createDtataBase();                                                   //Create Database
-
+*/
     
     function createDBConnection(){
         $servername = "localhost";
@@ -85,5 +85,23 @@
         return $insertId;
     }
 
+    
+    function getAllUserData (){
+        $conn = createDBConnection();
+        $sql = "SELECT * FROM users";
+        $result = $conn->query($sql);
 
+        //print_r($result);
+        $users = array();
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()){
+                $users[] = $row;
+            }
+        }else{
+            echo "There are no records in the table";
+        }
+        $conn->close();
+        return $users;
+    }
 ?>
