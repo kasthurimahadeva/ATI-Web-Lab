@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+    <script src="loginValidation.js"></script>
+  </head>
+  <body>
+<form class="login-box" name="myForm" onsubmit="return validateForm()">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username" id="username">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"  onclick="show()"></i>
+    <input type="password" placeholder="Password" id="password">
+  </div>
+  <div id="errorbox" style="color: wheat;"></div><br>
+  <a href="" style="color: wheat;">Forgot Password?</a>
+  <button class="btn">Sign in</button>
+</form>
+  </body>
+</html>
