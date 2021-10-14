@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+               
+    background-image: linear-gradient(rgba(44, 43, 43, 0.8),rgba(92, 73, 86, 0.8)),url(background.jpg);
+    font-family: sans-serif;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(247, 241, 241);
+}
+.nav-container{
+    height: 8vh;
+    background-color: rgb(0, 8, 12);
+    backdrop-filter: blur(0px);
+    
+
+}
+nav{
+  
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo p{
+    font-size: 20px;
+    color: cornsilk;
+    height: 20px;
+    font-weight: 500;
+}
+.nav-lings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-lings li a:hover{
+    color: rgb(18, 243, 243);
+}
+.nav-lings li:hover{
+    transform: scale(1.4);
+    transition: transform 0.6s;
+}
+.user-container {
+    width: 25%;
+    float: left;
+    color: black;
+}
+
+.user {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 5px 15px;
+    color: #020300;
+    background-color: rgb(228, 223, 245);
+    
+}
+
+.user:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 15px 0px 25px;
+}
+
+.img-avatar{
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.open {
+    margin-bottom: 10px;
+}
+
+.txt {
+    margin-bottom: 15px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.button {
+    border: none;
+    color: rgb(252, 250, 250);
+    padding: 15px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn-blue {
+    background-color: #0F7567;
+}
