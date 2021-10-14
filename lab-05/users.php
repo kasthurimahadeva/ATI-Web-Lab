@@ -65,38 +65,7 @@
     }
 ?>
 
-      <!--   " <table style='width:300px; background-color:#black; border: 1px solid black; border color:#0000FF;}>
-            
-         <tr>
-         <th font-size:50px; colspan='7'>  </th>
-             <th colspan='7'><img src='aari.jpg'  width='50' height='60'></th>
-          </tr>
-        
-         <tr>
-             <th>First Name</th>
-             <td>".$user['firstname']."</td>
-         </tr>
-         <tr>
-             <th>Last Name</th>
-             <td>".$user['lastname']."</td>
-         </tr>
-         <tr>
-         <th>Email</th>
-             <td>".$user['email']."</td>
-         </tr>
-         
-         
-         <tr>
-         <td align-items:center;><a href='userDetails.php' class='open'> <input type='submit' value='OPEN' class='btn'></a></td>
-         </tr><br>
-         " ; 
-         echo " <br><br><br><br><br><br><br><br><br>";
- }
- echo "</table>";
- 
- 
-?>
--->
+     
 
 </div>
 <br> <br><br>
