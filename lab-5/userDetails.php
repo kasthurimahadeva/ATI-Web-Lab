@@ -18,16 +18,16 @@
             </div>
             <nav>
                 <ul class="nav_links">
-                    <li class="nav_li"><a href="index.html" >Home</a></li>
+                    <li class="nav_li"><a href="index.html">Home</a></li>
                     <li class="nav_li"><a href="userForm.php">Create User</a></li>
                     <li class="nav_li"><a href="users.php" style="background-color: rgb(16, 172, 81);">Users</a></li>
                 </ul>
             </nav>
         </header>
         <div class="heading">User Information</div>
-            
+
         <section class='container-detail'>
-        <?php
+            <?php
     include("functions.php");
      $uId=$_GET['userId'];
      $Z=getUserDetails($uId,"users");
