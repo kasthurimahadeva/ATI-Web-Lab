@@ -221,6 +221,9 @@ form .row{
     font-weight: 400;
 }
 
+
+
+
 .btn{
     height: 40px;
     width: 30vw;
@@ -233,7 +236,7 @@ form .row{
     font-weight: 400;
     border: rgb(3, 187, 80);
 }
-
+*/
 .btn:hover{
     background-color: rgb(10, 224, 99);
 }
@@ -241,6 +244,79 @@ form .row{
     background-color: rgb(14, 168, 78);
 }
 
+
+.message-content-C,.message-content-CI{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(36, 36, 36, 0.774);
+    border-radius: 20px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.message-content-C{
+    display: flex;
+}
+
+.message-content-CI{
+    display: flex;
+}
+
+.message-header-C,.message-header-CI{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: rgb(205, 255, 230);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Raleway",sans-serif;
+    width: 400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.message-header-C img,.message-content-CI img{
+    max-width: 120px;
+    max-height: 120px;
+    padding: 10px;
+}
+
+.message-header-C h2 ,.message-content-CI h2{
+    color: rgb(20, 95, 58);
+    margin-bottom: 10px;
+}
+.message-header-C label , .message-content-CI label{
+    color: rgb(15, 126, 70);
+    margin-bottom: 10px;
+}
+
+.msg-btns{
+    margin: 30px;
+}
+.ms-btn{
+    text-decoration: none;
+    background:white ;
+    color: rgb(12, 63, 38);
+    padding:15px 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    border:rgb(118, 255, 175) 2px solid;
+    border-radius: 10px;
+}
+.ms-btn:hover{
+    background:rgb(15, 126, 70) ;
+    color: rgb(235, 235, 235);
+}
+.ms-btn:active{
+    background:rgb(13, 145, 79) ;
+    color: rgb(235, 235, 235);
+}
 
 
 /* All users data */
@@ -259,6 +335,7 @@ form .row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width:100vw;
 }
 .card{
     height: 400px;
@@ -297,6 +374,7 @@ form .row{
     letter-spacing: 3px;
 }
 
+
 .card .info .emailA{
     margin-top:5px;
     color: rgb(3, 187, 80);
@@ -332,6 +410,30 @@ form .row{
     font-weight: 400;
     margin-bottom:5px;
 }
+
+.btn1:link, .btn1:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:15px 60px;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family:"Montserrat",sans-serif ;
+}
+
+.btn-open{
+    background-color: rgb(3, 187, 80);
+    color: rgb(255, 255, 255);
+}
+.btn-open:hover{
+    background-color: rgb(8, 216, 95);
+    color: rgb(255, 255, 255);
+}
+.btn-open:active{
+    background-color: rgb(6, 170, 74);
+    color: rgb(255, 255, 255);
+}
+/*
 .open-btn{
     height:40px;
     width: 150px;
@@ -347,3 +449,87 @@ form .row{
 .open-btn:active{
     background-color: rgb(16, 139, 68);
 }
+*/
+
+.container-detail{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100vw;
+}
+.card-detail{
+    height: 450px;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 0 3px 5px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #222;
+}
+.card-detail .bg-image-detail .img-detail{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background-color: rgb(3, 187, 80);
+    clip-path: polygon(0 0, 100% 0%,100% 70%,45% 100%,0 75%);
+
+}
+
+.card-detail .pic-detail img{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    border: 10px solid #222;
+    margin-top: -90px;
+    position:relative;
+}
+
+.card-detail .info-detail .firstname-detail,.card-detail .info-detail .lastname-detail {
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat",sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 2px 0;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.card-detail .info-detail .emailA-detail{
+    margin-top:5px;
+    color: rgb(3, 187, 80);
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    padding: 2px 0;
+    font-weight: 500;
+}
+
+.card-detail .info-detail .age-detail{
+    margin-top:5px;
+    color: #f0f0f0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 15px;
+    padding: 2px 0;
+    font-weight: 500;
+}
+.card-detail .info-detail .from-detail{
+    margin-top:10px;
+    color: #f0f0f0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    padding: 2px 0;
+    font-weight: 500;
+}
+
+.card-detail .info-detail .address-detail{
+    margin-top:5px;
+    color: #f0f0f0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 17px;
+    padding: 2px 0;
+    font-weight: 400;
+    margin-bottom:35px;
+}
+
+

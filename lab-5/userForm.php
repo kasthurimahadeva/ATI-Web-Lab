@@ -19,7 +19,8 @@
             <nav>
                 <ul class="nav_links">
                     <li class="nav_li"><a href="index.html">Home</a></li>
-                    <li class="nav_li"><a href="userForm.php" style="background-color: rgb(16, 172, 81);">Create User</a></li>
+                    <li class="nav_li"><a href="userForm.php" style="background-color: rgb(16, 172, 81);">Create
+                            User</a></li>
                     <li class="nav_li"><a href="users.php">Users</a></li>
                 </ul>
             </nav>
@@ -38,7 +39,7 @@
                             <input type="text" name="lname" id="lname" class="textbox">
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="input-data">
                             <label for="email">Email</label> <br>
@@ -61,10 +62,13 @@
                         <div class="input-data">
                             <input type="submit" value="submit" name="submit" class="btn">
                         </div>
+
                     </div>
                 </form>
+
             </div>
         </div>
+
 
         <footer>
             <div class="main-footer">
@@ -78,7 +82,7 @@
 
         </footer>
     </div>
-    </div>
+
 </body>
 
 </html>

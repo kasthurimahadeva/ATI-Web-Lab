@@ -93,9 +93,40 @@
                 $users[] = $row;
             }
         } else {
-            echo "There is no records in the table";
+            //echo "There is no records in the table";
         }
         $conn->close();
         return $users;
+    }
+
+    function getUserDetails($userId,$tbName){
+        $conn = createDBConnection();
+
+        $sql = "select * from $tbName where id =$userId";
+        $result = $conn->query($sql);
+
+        //print_r($result);
+        //pre_r($result);
+        $user = array();
+        //pre_r($user);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $user[]=$row;
+               // pre_r($user);
+               // echo $user[0]['firstname'];
+            }
+        } else {
+            echo "There is no records in the table";
+        }
+        $conn->close();
+        return $user;
+    }
+    //getUserDetails("2","users");
+
+    function pre_r($array){
+        echo '<pre>';
+        print_r($array);
+        echo '</pre>';
     }
 ?>
