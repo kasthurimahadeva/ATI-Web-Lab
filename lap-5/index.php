@@ -7,6 +7,22 @@
     <title>REGESTATION</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+  <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #D3D3D3;}
+
+
+</style>
 <body>
 <form action="" method="post">
     <h1>Registation</h1>
@@ -17,8 +33,7 @@
   
   <div class="container">
     
-      <!-- <label for="id"><b>ID</b></label><br>
-    <input type="text" placeholder="Enter ID" name="id"><br> -->
+     
 
     <label for="FirstName"><b>FirstName</b></label><br>
     <input type="text" placeholder="Enter FirstName" name="fname" ><br>
@@ -33,7 +48,7 @@
     <input type="text" placeholder="Enter Address" name="address"><br>
      <div class="btn">
      <button type="submit" name="btnReg">Register Now</button>
-     <button type="submit" name="btnView"><a href='http://localhost/lapsheet-5/view.php' style="color:white";>View</a></button>
+     <button type="submit" name="btnView">View</a></button>
      </div>   
     <?php
      
@@ -49,12 +64,6 @@
 
         $Address=$_POST['address'];
 
-
-
-   
-
-      
-
         if(emptyInput($FirstName,$LastName,$Email,$Address)!==false){
 
              echo "<p style = color:red;>Fill in all fields!</p>";
@@ -66,20 +75,59 @@
 
         }
 
-
-        //------------------------------------------------
-
-        
-
      }
+
+    echo '</form> </div> <br><br> <hr><br>';
+
+     if(isset($_POST['btnView'])){
+
+  
+    $sql = "SELECT * FROM user1";
+  
+    $stmt =   createDataBase() -> query($sql);
+
+    echo "<table border=1px style=''>
+            <tr>
+                <th>userId</th>
+                <th>First Name</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>update</th>
+                <th> delete</th>
+            </tr>
+    ";  
+
+    while($row = $stmt ->fetch_assoc()) {            
+        
+        echo "
+            <tr>
+                <td>" . $row['id'] . " </td>
+                <td>" . $row['firstname'] . " </td>
+                <td>" . $row['lastname'] . " </td>
+                <td>" . $row['email'] . " </td>
+                <td>" . $row['useraddress'] . " </td>
+                <td> <a href ='http://localhost/lapsheet-5/update.php'><button type='submit' name='btnupdate' style='width:50% ; background-color:	#20B2AA'; href=''>Update</button></a></td>
+                <td> <a href ='http://localhost/lapsheet-5/delete.php'><button type='submit' name='btndelete' style='width:50% ; background-color:#8B0000'>Delete</button></a></td>
+            </tr>
+        ";
+
+    }
+}
+
+if(isset($_POST['btnupdate'])){
+
+}
+  
+  
 
     ?>
 
  
     
-  </div>
+  
 
-</form>
+
 
  
  </div>
