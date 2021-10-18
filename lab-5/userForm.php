@@ -60,6 +60,7 @@
                                 <div class='row'>
                                     <div class='input-data'>
                                         <label for='fname'>First Name</label> <br>
+                                        <input type='text' name='id' id='fname' class='textbox' value='$uId' style='display:none;'>
                                         <input type='text' name='fname' id='fname' class='textbox' value='$frName'>
                                     </div>
                                     <div class='input-data'>

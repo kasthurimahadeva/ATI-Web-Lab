@@ -124,7 +124,18 @@
     }
     //getUserDetails("2","users");
 
-    
+    function updateExistingUser($id,$firstname,$lastname,$email,$age,$address) {
+        $conn = createDBConnection();
+
+        $sql = "UPDATE users SET firstname='$firstname', lastname='$lastname', email='$email', age='$age', address='$address' WHERE id=$id";
+
+        if ($conn->query($sql) == TRUE) {
+            echo "Updated successfully";
+        } else {
+            echo "Error: ".$conn->error;
+        }
+    }
+
 
     function pre_r($array){
         echo '<pre>';
