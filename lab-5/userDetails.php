@@ -49,7 +49,11 @@
                         <div class='age-detail'>Age :&ensp;".$Z['0']['age'] . " years </div>
                         <div class='from-detail'>Address</div>
                         <div class='address-detail'>".$Z['0']['address'] ."</div>
-                        
+                        <div class='btn-userDetails'>
+                            <a href='userForm.php?userId={$uId}' class='btn-edit'>Edit</a>
+                            <a href='#' class='btn-delete'>Delete</a>
+                        </div>
+                        <a href='users.php' class='allusers'>-See All users-</a>
                 </div>
     
     ";

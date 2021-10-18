@@ -95,6 +95,7 @@ footer .main-footer{
     justify-content: center;
     align-items: center;
     height:9vh;
+    width: 100vw;
     background-color: rgb(36, 35, 35);
     box-shadow:-2px 5px 10px rgba(3, 78, 39, 0.685);
 }
@@ -105,6 +106,7 @@ footer .sub-footer{
     height:5vh;
     background-color: rgb(3, 187, 80);
     box-shadow:-2px 5px 10px rgba(3, 78, 39, 0.685);
+    width: 100vw;
 }
 .TextCopyR{
     background-color: transparent;
@@ -161,21 +163,20 @@ footer .sub-footer{
 .frm-body{
     display: flex;
     flex-direction: column;
-    padding:30px;
-    box-shadow: 0 3px 5px #000;
+    padding: 60px 40px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #222;
-    margin:5vh 0vh 5vh 0vh;
+    background-color: rgb(36, 35, 35);
+    margin:5vh 0 5vh 0;
     justify-content: center;
-    height:65vh;
+    align-items: center;
 }
 .frm-body .frm-title{
     color: white;
     font-family: "Montserrat",sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size:24px;
+    font-size:20px;
     text-align: center;
     margin-top:-20px;
     margin-bottom:20px;
@@ -529,7 +530,67 @@ form .row{
     font-size: 17px;
     padding: 2px 0;
     font-weight: 400;
-    margin-bottom:35px;
+    margin-bottom:15px;
 }
 
+.btn-userDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 80px;
+    margin-left: 20%;
+}
 
+.btn-edit  {
+    padding: 20px 0 20px 0;
+    width: 160px;
+    background-color: rgb(250, 250, 250);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    color:rgb(61, 61, 61);
+    border-radius: 100px;
+    font-weight: 500;
+}
+.btn-edit:hover{
+    background-color: rgb(124, 247, 252);
+}
+.btn-edit:active{
+    background-color: rgb(61, 207, 212);
+    color: white;
+}
+.btn-delete  {
+    padding: 20px 0 20px 0;
+    background-color: rgb(250, 250, 250);
+    width: 160px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    color:rgb(61, 61, 61);
+    border-radius: 100px;
+    font-weight: 500;
+}
+.btn-delete:hover{
+    background-color: rgb(252, 124, 124);
+}
+.btn-delete:active{
+    background-color: rgb(212, 61, 61);
+    color: white;
+}
+.allusers{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:15px ;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family:"Montserrat",sans-serif ;
+    width: 300px;
+}
+.allusers:hover{
+    color: rgb(62, 182, 72);
+}
+.allusers:active{
+    color: rgb(29, 88, 34);
+}
