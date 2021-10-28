@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <div class="main">
         <header>
             <div class="logo">
@@ -51,16 +52,33 @@
                         <div class='address-detail'>".$Z['0']['address'] ."</div>
                         <div class='btn-userDetails'>
                             <a href='userForm.php?userId={$uId}' class='btn-edit'>Edit</a>
-                            <a href='#' class='btn-delete'>Delete</a>
+                            <a class='btn-delete' id='btn-delete' onclick='openDeleteMessage()'>Delete</a>
                         </div>
                         <a href='users.php' class='allusers'>-See All users-</a>
                 </div>
-    
+                
+        </section>
     ";
 
     
 ?>
-        </section>
+       
+       <div class='message-delete'>
+            <div class='message-head-delete'>
+                <img src='Image/x-button.png' alt='icon'>
+                <h2>Delete User</h2>
+                <label>Are you sure you want to delete this user?</label>
+    
+                <div class='line'></div>
+                <form action='' method='post'>
+                <div class='msg-btns-del'>
+                    <a href='#' class='ms-btn-cancel' id='ms-btn-cancel' onclick='closeDeleteMessage()' name='cancel'>Cancel</a>
+                    <a href='#' class='ms-btn-delete' id='ms-btn-delete' onclick='deleteRecord()' name='delete'>Delete</a>
+                </div>
+                </form>
+                
+            </div>
+        </div>
 
         <footer>
             <div class="main-footer">
@@ -73,7 +91,30 @@
             </div>
 
         </footer>
+
     </div>
+    
+    <script>
+        function openDeleteMessage(){
+            document.querySelector(".message-delete").style.display="flex";
+        }
+        function closeDeleteMessage(){
+            document.querySelector(".message-delete").style.display="none";
+        }
+        function deleteRecord(){
+
+            <?php
+                echo "
+                window.location.href='deleteUser.php?userId={$uId}';
+                ";
+            ?>
+                
+        }
+            
+            
+    </script>
+
+   
 </body>
 
 </html>

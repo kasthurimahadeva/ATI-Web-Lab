@@ -130,12 +130,22 @@
         $sql = "UPDATE users SET firstname='$firstname', lastname='$lastname', email='$email', age='$age', address='$address' WHERE id=$id";
 
         if ($conn->query($sql) == TRUE) {
-            echo "Updated successfully";
+            //echo "Updated successfully";
         } else {
             echo "Error: ".$conn->error;
         }
     }
 
+    function deleteUserData($uid) {
+        $conn = createDBConnection();
+
+        $sql = "DELETE FROM users WHERE id=$uid";
+        if($conn->query($sql) == TRUE) {
+            //echo "Data deleted successfully";
+        } else {
+            echo "Error: ".$conn->error;
+        }
+    }
 
     function pre_r($array){
         echo '<pre>';

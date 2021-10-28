@@ -33,6 +33,7 @@ header{
     transition: all .2s linear;
 }
 
+
 /* logo part has two component-img and div(logo-txt) */
 
 .logo{
@@ -126,13 +127,22 @@ footer .sub-footer{
 }
 
 /* Home page content */
+
+.landing-img{
+    display: flex;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 5px;
+}
 .home-article{
     display: flex;
-    margin-top:25vh;
-    margin-bottom:30vh;
+    margin-top:14vh;
+    margin-bottom:18vh;
     display: flex;
     flex-direction: column;
     max-width: 60vw;
+    align-items: center;
+    justify-content: center;
 }
 .home-article h1{
     display: flex;
@@ -255,6 +265,7 @@ form .row{
     border-radius: 20px;
     width: 100vw;
     height: 100vh;
+    
 
 }
 
@@ -270,7 +281,7 @@ form .row{
     display: flex;
     position: absolute;
     flex-direction: column;
-    background: rgb(205, 255, 230);
+    background: rgba(36, 36, 36, 0.774);
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -280,20 +291,21 @@ form .row{
     left:50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    border: #f0f0f0 3px solid;
 }
 
 .message-header-C img,.message-content-CI img{
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 90px;
+    max-height: 90px;
     padding: 10px;
 }
 
 .message-header-C h2 ,.message-content-CI h2{
-    color: rgb(20, 95, 58);
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 .message-header-C label , .message-content-CI label{
-    color: rgb(15, 126, 70);
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 
@@ -304,11 +316,11 @@ form .row{
     text-decoration: none;
     background:white ;
     color: rgb(12, 63, 38);
-    padding:15px 30px;
-    margin: 10px;
+    padding:15px 70px;
+    margin-top: 10px;
     text-transform: uppercase;
-    border:rgb(118, 255, 175) 2px solid;
-    border-radius: 10px;
+    border:rgb(255, 255, 255) 2px solid;
+    border-radius: 100px;
 }
 .ms-btn:hover{
     background:rgb(15, 126, 70) ;
@@ -318,6 +330,8 @@ form .row{
     background:rgb(13, 145, 79) ;
     color: rgb(235, 235, 235);
 }
+
+
 
 
 /* All users data */
@@ -593,4 +607,70 @@ form .row{
 }
 .allusers:active{
     color: rgb(29, 88, 34);
+}
+
+.message-delete{
+	position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(36, 36, 36, 0.774);
+    border-radius: 20px;
+    width: 100vw;
+    height: 100vh;
+    display:none;
+}
+.message-head-delete{
+	display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: rgb(49, 49, 49);
+    border: #f0f0f0 3px solid;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Raleway",sans-serif;
+    width: 500px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.message-head-delete img{
+	max-width: 90px;
+    max-height: 90px;
+    padding: 10px;
+}
+.message-head-delete h2, .message-head-delete label{
+	color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.msg-btns-del{
+    margin: 30px;
+}
+.ms-btn-cancel, .ms-btn-delete{
+    text-decoration: none;
+    background:white ;
+    color: rgb(12, 63, 38);
+    padding:15px 30px;
+    margin: 25px;
+    text-transform: uppercase;
+    border:rgb(255, 255, 255) 2px solid;
+    border-radius: 100px;
+}
+.ms-btn-cancel:hover{
+    background:rgb(97, 83, 221) ;
+    color: rgb(235, 235, 235);
+}
+.ms-btn-delete:hover{
+    background:rgb(250, 64, 79) ;
+    color: rgb(235, 235, 235);
+}
+.ms-btn-delete:active{
+    background:rgb(207, 52, 65);
+    color: rgb(235, 235, 235);
+}
+.ms-btn-cancel:active{
+    background:rgb(58, 47, 158) ;
+    color: rgb(235, 235, 235);
 }
