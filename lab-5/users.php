@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Lab-5</title>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-*{
-    margin: 0;
-    padding: 0;
+            *{
     font-family: serif;
 }
 ul li{
@@ -29,7 +31,8 @@ li a{
         </style>
     </head>
     <body>
-    <nav class="navbar">
+        <div class="main">
+            <nav class="navbar">
                 <div></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,58 +41,34 @@ li a{
                 </ul>
             </nav>
         </div>
-</body>
+    </body>
 </html>
 <?php
-    include("function.php");
-
-    $users = getAllUserData();
-    echo "<br>";
-    echo "<style>*{background-color : skyblue;} </style>";
-    echo  "<h2 style='text-align: center;'>User Details</h2>";
-    foreach ($users as $user) {  
-           echo
-
-           " <table style='width:300px; float: left; padding: 5px;' border: 1px solid black; border color:#0000FF;}>
-
-            <tr>
-                <th font-size:50px; colspan='7'> USER ".$user['id']."</th>
-            </tr>
-
-            <tr>
-                <th colspan='7'><img src='user.png'  width='50' height='60'></th>
-             </tr>
-
-            <tr>
-                <th>Id</th>
-                <td>000".$user['id']."</td>
-            </tr>
-
-            <tr>
-                <th>First Name</th>
-                <td>".$user['firstname']."</td>
-            </tr>
-
-            <tr>
-                <th>Last Name</th>
-                <td>".$user['lastname']."</td>
-            </tr>
-
-            <tr>
-            <th>Email</th>
-                <td>".$user['email']."</td>
-            </tr>
-
-            <tr>
-                <th>Address</th>
-                <td>".$user['address']."</td>
-            </tr>
-
-            <tr>
-                <th>Age</th>
-                <td>".$user['age']."</td>
-            </tr> " ; 
-            
-    }
-    echo "</table>";
-?>
+include("function.php");
+$users = getAllUserDetails(); 
+foreach ($users as $user) {  
+ echo "
+<html>
+    <head>
+        <title>Users</title>
+        <link rel='stylesheet' href='userdetails.css'>
+    </head>
+<body>
+    <div class='user-box'>
+        <form name='loginForm' action='userDetails.php'>
+        <h2>USER 000".$user['id']."</h2>
+            <div class='img'>
+                 <img src='user.png' width='80px' height='80px'></div>
+                 <li>
+                 <ul>Fullname: ".$user['firstname'].' '.$user['lastname']."</ul>
+                 <ul>E-mail: ".$user['email']."</ul>
+                 <ul>Address: ".$user['address']."</ul>
+                 <ul>Age: ".$user['age']."</ul>
+                </li>
+               
+        </form>
+        <a href='userDetails.php?userId={$user["id"]}'><input type='button' value='Open'></a>
+    </div>
+</body>
+</html>";
+}?>

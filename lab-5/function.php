@@ -52,7 +52,7 @@ function createTable(){
         firstname VARCHAR (20) NOT NULL,
         lastname VARCHAR (20) NOT NULL,
         email VARCHAR (20) NOT NULL,
-        address VARCHAR (100) NOT NULL,
+        address VARCHAR (150) NOT NULL,
         age  VARCHAR (3) NOT NULL
         )";
 
@@ -83,7 +83,7 @@ function createTable(){
      
     //insertUserData('DiluShaN', 'Vigneswaran', 'dilushan0314@gmail.com', 'Jaffna', 23);
 
-    function getAllUserData() {
+    function getAllUserDetails() {
         $conn = createDBConnection();
 
         $sql = "SELECT * FROM users";
@@ -104,4 +104,56 @@ function createTable(){
     }
 
     //getAllUserData();
+
+    function getUserDetails($userId,$tbName){
+        $conn = createDBConnection();
+
+        $sql = "select * from $tbName where id =$userId";
+        $result = $conn->query($sql);
+
+        //print_r($result);
+        //pre_r($result);
+        $user = array();
+        //pre_r($user);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $user[]=$row;
+               
+            }
+        } else {
+            echo "There is no records in the table";
+        }
+        $conn->close();
+        return $user;
+    }
+
+    function updateExistingUser($id,$firstname,$lastname,$email,$age,$address) {
+        $conn = createDBConnection();
+
+        $sql = "UPDATE users SET firstname='$firstname', lastname='$lastname', email='$email', age='$age', address='$address' WHERE id=$id";
+
+        if ($conn->query($sql) == TRUE) {
+            //echo "Updated successfully";
+        } else {
+            echo "Error: ".$conn->error;
+        }
+    }
+
+    function deleteUserData($uid) {
+        $conn = createDBConnection();
+
+        $sql = "DELETE FROM users WHERE id=$uid";
+        if($conn->query($sql) == TRUE) {
+            //echo "Data deleted successfully";
+        } else {
+            echo "Error: ".$conn->error;
+        }
+    }
+
+    function pre_r($array){
+        echo '<pre>';
+        print_r($array);
+        echo '</pre>';
+    }
 ?>

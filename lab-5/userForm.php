@@ -1,3 +1,6 @@
+<?php
+    include("function.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,21 +89,63 @@ input[type="submit"]:hover{
             </nav>
         </div>
 <div class="box">
+    <?php
+        if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+            $url = "htpps://";
+        else
+            $url = "http://";
+
+        $url.= $_SERVER['HTTP_HOST'];
+
+        $url.= $_SERVER['REQUEST_URI'];
+
+        if (stripos($_SERVER['REQUEST_URI'], 'userId')!==false){
+            $uId=$_GET['userId'];
+            $Z=getUserDetails($uId,"users");
+            $frName=$Z[0]['firstname'];
+            $lsName=$Z[0]['lastname'];
+            $userMail=$Z[0]['email'];
+            $userAge=$Z[0]['age'];
+            $userAddress=$Z[0]['address'];
+
+            echo"
+            <h2>Update existing User  : $frName</h2>
+            <h3>You can edit User details</h3>
+            <form method='POST' action='userData.php'>
+                <label>First Name</label>
+                <input type='text' name='id' id='firstname' value='$uId' style='display:none;'>
+                <input type='text' name='firstname' id='firstname' value='$frName'required><br>
+                <label>Last Name</label>
+                <input type='text' name='lastname' id='lastname' value='$lsName' required><br>
+                <label>E-mail</label>
+                <input type='email' name='email' id='email' value='$userMail' required><br>
+                <label>Address</label>
+                <input type='text' name='address' id='address' value='$userAddress' required><br>
+                <label>Age</label>
+                <input type='number' name='age' id='age' value='$userAge'required><br> 
+                <input type='submit' value='Update' name='submit'>
+            </form>";
+            }
+        
+        else{
+            echo"
         <h2>Create User</h2>
         <h3>Please fill in this form to create an account</h3>
-        <form method="POST" action="userData.php">
+        <form method='POST' action='userData.php'>
             <label>First Name</label>
-            <input type="text" name="firstname" id="firstname" required><br>
+            <input type='text' name='firstname' id='firstname' required><br>
             <label>Last Name</label>
-            <input type="text" name="lastname" id="lastname" required><br>
+            <input type='text' name='lastname' id='lastname' required><br>
             <label>E-mail</label>
-            <input type="email" name="email" id="email" required><br>
+            <input type='email' name='email' id='email' required><br>
             <label>Address</label>
-            <input type="text" name="address" id="address" required><br>
+            <input type='text' name='address' id='address' required><br>
             <label>Age</label>
-            <input type="number" name="age" id="age" required><br> 
-            <input type="submit" value="Submit">
-        </form>
+            <input type='number' name='age' id='age' required><br> 
+            <input type='submit' value='Submit' name='submit'>
+        </form>";
+        }
+        ?>
     </div>
 </body>
 </html>
