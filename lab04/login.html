@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Login</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<div class="center">
+	<div class="btns">
+	<a class="a1" href="#">Login</a>			
+	</div>
+	<div class="login_form">
+	<div class="header">Login Here</div>
+	<div class="Login_error"></div>
+	<form action="login.html" name="login_form" id="loginform"  method="post" onsubmit="return call()">
+	<input type="text" name="Username"id="uname" placeholder="Username" >
+	<div id="errorbox1"></div>
+	<input class="email" name="password"id="pwd" type="password" placeholder="Password" >
+	<div id="errorbox"></div>
+	<input type="submit" value="Login" id="login">
+	</form>
+    </div>
+	<script type="text/javascript" src="login.js"></script>
+   
+
+</body>
+</html>
