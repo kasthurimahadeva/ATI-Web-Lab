@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Signup Form</title>
+	<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+	<div class="center">
+	<div class="btns">
+	<a class="a1" href="#">Sign up</a>			
+	</div>
+	<div class="signup_form">
+	<div class="header">Signup For Free</div>
+	<div class="signup_error"></div>
+	<form action="signup.html" class="signup" name="signup_Form" id="signup_form" method="post" onsubmit="return call2()">
+	<input type="text" name="firstname" id="fname" placeholder="Firstname" >
+	<div id="errorbox1"></div>
+	<input class="lstname" name="lastname" id="lname" type="text" placeholder="Lastname" >	
+	<div id="errorbox2"></div>
+	<input class="email" name="email" id="email" type="text" placeholder="Email " >
+	<div id="errorbox3"></div>
+	<input class="username" name="username" id="uname" type="text" placeholder="Username" >	
+	<div id="errorbox4"></div>
+	<input class="email" name="password"id="pass1" type="password" placeholder="Password" onkeyup="return validate ()" >
+	<div id="errorbox5"></div>
+	<input class="email" name="password"id="pass2" type="password" placeholder="Confirm Password" >
+	<div id="errorbox6"></div>
+	<div class="validation">
+		<b>[password validation:</b>
+			<i id="upper">Atleast one uppercase</i>,
+			<i id="lower">Atleast one lowercase</i>,
+			<i id="special_char">Atleast one one special sympol</i>,
+			<i id="number">Atleast one number</i>,
+			<i id="length">Atleast 8 characters</i>.]
+			</div>
+	<input type="submit" value="Signup">
+		</form>
+	</div>
+	<script type="text/javascript" src="password.js"></script>
+	<script type="text/javascript" src="signup.js"></script>
+
+   
+
+</body>
+</html>
